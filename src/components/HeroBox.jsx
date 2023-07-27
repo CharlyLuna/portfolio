@@ -26,13 +26,13 @@ export const HeroBox = () => {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <img className='h-10 w-10' src={GithubIcon} alt='github icon' />
+            <img className='h-9 w-9' src={GithubIcon} alt='Github icon' />
           </a>
           <a
             className='hover:scale-125 transition-transform duration-300'
             href=''
           >
-            <img className='h-10 w-10' src={LinkedInIcon} alt='github icon' />
+            <img className='h-9 w-9' src={LinkedInIcon} alt='linkedIn icon' />
           </a>
         </div>
       </div>

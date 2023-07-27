@@ -1,4 +1,6 @@
+import { ExpMarkup } from './components/ExpMarkup'
 import { HeroBox } from './components/HeroBox'
+import { MARKUPS } from './utils/constants'
 
 const App = () => {
   return (
@@ -21,10 +23,23 @@ const App = () => {
           </ul>
         </nav>
       </header>
-      <main className='h-screen overflow-x-hidden'>
+      <main className='h-screen'>
         <HeroBox />
       </main>
+      <section className='mb-16'>
+        <h1 className='flex justify-center mb-14 text-3xl text-light-red font-bold'>MY EXPERIENCE</h1>
+        <div className='flex justify-center items-center mx-10 md:mx-16'>
+          <ol>
+            <li className='mb-10 max-w-7xl'>
+              <ExpMarkup {...MARKUPS.college} />
+            </li>
+            <li className='max-w-7xl'>
+              <ExpMarkup {...MARKUPS.freeway} />
+            </li>
+          </ol>
+        </div>
 
+      </section>
     </>
   )
 }
