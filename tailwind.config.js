@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-red': 'var(--primary-red)',
-        'primary-red-200': 'var(--primary-red-200)',
-        'light-red': 'var(--secondary-red)'
+        primary: 'var(--primary)',
+        accent: 'var(--accent)',
+        secondary: 'var(--secondary)'
       }
     }
   },

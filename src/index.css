@@ -9,9 +9,9 @@
   scroll-behavior: smooth;
   background-color: #1A1A1A;
   /* Variables */
-  --primary-red: #4D0A11;
-  --primary-red-200: #9e4040;
-  --secondary-red: #ff9e99;
+  --primary: #4D0A11;
+  --accent: #9e4040;
+  --secondary: #ff9e99;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
