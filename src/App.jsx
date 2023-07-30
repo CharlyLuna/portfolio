@@ -2,7 +2,7 @@ import { ExpMarkup } from './components/ExpMarkup'
 import { HeroBox } from './components/HeroBox'
 import { NavBar } from './components/NavBar'
 import { ProjectCard } from './components/ProjectCard'
-import { MARKUPS } from './utils/constants'
+import { MARKUPS, PROJECTS } from './utils/constants'
 
 const App = () => {
   return (
@@ -28,19 +28,16 @@ const App = () => {
       </section>
       <section id='projects' className='mb-20'>
         <h1 className='flex justify-center mb-14 pt-20 text-3xl text-secondary font-bold'>PROJECTS</h1>
-        <div className='mx-10 flex  items-center place-content-center'>
-          <ul className='grid grid-cols-1 gap-8 xl:gap-2 lg:grid-cols-2 xl:grid-cols-3 m-0 place-items-center xl:w-full xl:max-w-7xl'>
-            <li>
-              <ProjectCard image='/dalle-clone-preview.PNG' tags={['React', 'Tailwindcss', 'MongoDB', 'Nodejs']} title='Project' description='lorem ipsum' />
-            </li>
-            <li>
-              <ProjectCard image='/dalle-clone-preview.PNG' tags={['React', 'Tailwindcss', 'MongoDB', 'Nodejs']} title='Project' description='lorem ipsum' />
-            </li>
-            <li>
-              <ProjectCard image='/dalle-clone-preview.PNG' tags={['React', 'Tailwindcss', 'MongoDB', 'Nodejs']} title='Project' description='lorem ipsum' />
-            </li>
+        <div className='mx-10 flex justify-center'>
+          <ul className='grid grid-flow-row grid-cols-1 gap-8 xl:gap-2 lg:grid-cols-2 xl:grid-cols-3 m-0 xl:w-full xl:max-w-7xl justify-items-center'>
+            {
+              PROJECTS.map((project, index) => (
+                <li key={`${project}_${index}`}>
+                  <ProjectCard {...project} />
+                </li>
+              ))
+            }
           </ul>
-
         </div>
       </section>
     </>
