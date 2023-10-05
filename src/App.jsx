@@ -10,14 +10,14 @@ const App = () => {
       <header>
         <NavBar />
       </header>
-      <main id='home' className='h-screen'>
+      <main id='home' className='h-screen min-h-fit flex justify-center'>
         <HeroBox />
       </main>
-      <section id='experience' className='mb-20'>
-        <h1 className='flex justify-center pt-20 mb-14 text-3xl text-secondary font-bold'>MY EXPERIENCE</h1>
+      {/* <section id='experience' className='mb-20'>
+        <h1 className='flex justify-center pt-20 mb-14 text-3xl text-[#4b4f5d] font-bold'>MY EXPERIENCE</h1>
         <div className='flex justify-center items-center mx-10 md:mx-16'>
           <ol>
-            <li className='mb-10 max-w-7xl'>
+            <li className='mb-14 max-w-7xl'>
               <ExpMarkup {...MARKUPS.college} />
             </li>
             <li className='max-w-7xl'>
@@ -25,9 +25,9 @@ const App = () => {
             </li>
           </ol>
         </div>
-      </section>
+      </section> */}
       <section id='projects' className='mb-20'>
-        <h1 className='flex justify-center mb-14 pt-20 text-3xl text-secondary font-bold'>PROJECTS</h1>
+        <h1 className='flex justify-center mb-14 pt-20 text-3xl text-[#4b4f5d] font-bold'>PROJECTS</h1>
         <div className='mx-10 flex justify-center'>
           <ul className='grid grid-flow-row grid-cols-1 gap-8 xl:gap-2 lg:grid-cols-2 xl:grid-cols-3 m-0 xl:w-full xl:max-w-7xl justify-items-center'>
             {

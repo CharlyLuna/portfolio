@@ -17,7 +17,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className={`${isScrolled ? 'bg-black/80' : 'bg-transparent'} fixed flex justify-center top-0 py-4 w-full z-20`}>
+      <nav className={`${isScrolled ? 'bg-primary' : 'bg-transparent'} fixed flex justify-center top-0 py-4 w-full z-20`}>
         <ul className='flex text-lg text-secondary font-semibold'>
           <li className=''>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#home'>Home</a>
