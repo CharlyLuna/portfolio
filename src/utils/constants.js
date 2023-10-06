@@ -1,13 +1,13 @@
 export const MARKUPS = {
   freeway: {
-    title: 'MOBILE DEVELOPER',
-    date: '2022 - APR 2023',
+    title: 'MOBILE APPLICATION DEVELOPER',
+    date: 'JAN 2022 - APR 2023',
     tags: ['Dart', 'GraphQL', 'Flutter'],
-    description: 'Collaborated in the front-end team as a mobile developer at the startup FreeWayMX. Worked in the development of the FreeWay app, bringing to life the figma designs and connecting the app with the backend.'
+    description: 'Collaborated in the front-end team as a mobile developer at the startup FreeWay. Worked in the development of the FreeWay app, bringing to life the figma designs and connecting the app with the backend.'
   },
   college: {
     title: 'SOFTWARE ENGINEERING STUDENT',
-    date: 'AUG 2020-PRESENT',
+    date: 'AUG 2020 - PRESENT',
     tags: ['Javascript', 'React', 'Jest', 'HTML', 'CSS'],
     description: 'Currently studying my last year of software engineering at University of Colima, working in personal projects and learning new technologies.'
   }
@@ -31,8 +31,8 @@ export const PROJECTS = [
   {
     title: 'GAME STORE WEBSITE',
     image: '/netflix-home.png',
-    description: 'Movies website with the style of Netflix using an API to retrieve movies data',
-    tags: ['React', 'Tailwindcss', 'Firebase'],
+    description: 'Videogames website store using data from an API, the search, filter and details of videogames are included. This project aims to create a beautiful design of a web store for gamers.',
+    tags: ['React', 'Tailwindcss'],
     link: '#'
   }
 ]

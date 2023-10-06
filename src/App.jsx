@@ -13,7 +13,7 @@ const App = () => {
       <main id='home' className='h-screen min-h-fit flex justify-center'>
         <HeroBox />
       </main>
-      {/* <section id='experience' className='mb-20'>
+      <section id='experience' className='mb-20'>
         <h1 className='flex justify-center pt-20 mb-14 text-3xl text-[#4b4f5d] font-bold'>MY EXPERIENCE</h1>
         <div className='flex justify-center items-center mx-10 md:mx-16'>
           <ol>
@@ -25,7 +25,7 @@ const App = () => {
             </li>
           </ol>
         </div>
-      </section> */}
+      </section>
       <section id='projects' className='mb-20'>
         <h1 className='flex justify-center mb-14 pt-20 text-3xl text-[#4b4f5d] font-bold'>PROJECTS</h1>
         <div className='mx-10 flex justify-center'>
