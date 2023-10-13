@@ -26,7 +26,7 @@ export const Form = () => {
       <label htmlFor='email'>Email</label>
       <input required className='p-2 rounded-sm ' type='email' name='email' />
       <label htmlFor='message'>Message</label>
-      <textarea required className='p-2 rounded-sm h-[100px] ' type='text' name='message' />
+      <textarea required className='p-2 rounded-sm h-[100px] min-h-[100px]' type='text' name='message' />
       <button type='submit' className='bg-primary text-[#f5f5f5] mt-4 w-fit py-2 px-6 rounded-sm font-semibold hover:scale-105 hover:bg-accent transition-all duration-300 ease-in-out'>Send</button>
     </form>
   )
