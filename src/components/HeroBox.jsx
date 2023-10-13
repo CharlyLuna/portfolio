@@ -28,7 +28,7 @@ export const HeroBox = () => {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <GithubIcon />
+            <GithubIcon color='black' />
           </a>
           <a
             className='hover:scale-[1.15] transition-transform duration-300'
