@@ -11,7 +11,7 @@ const App = () => {
       <header>
         <NavBar />
       </header>
-      <main id='home' className='h-screen min-h-fit flex justify-center'>
+      <main id='home' className='h-screen min-h-[600px] flex justify-center'>
         <HeroBox />
       </main>
       <section id='experience' className='mb-20'>

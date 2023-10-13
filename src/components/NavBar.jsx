@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
+import { BurgerMenu } from './BurgerMenu'
+import { BurgerMenuIcon } from './BurgerMenuIcon'
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
+
   useEffect(() => {
     const handleScroll = (e) => {
       const { currentTarget } = e
@@ -17,11 +21,15 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className={`${isScrolled ? 'bg-primary' : 'bg-transparent'} fixed flex justify-center top-0 py-4 w-full z-20`}>
-        <ul className='flex text-lg text-secondary font-semibold'>
-          <li className=''>
-            <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#home'>Home</a>
-          </li>
+      <nav className={`${isScrolled ? 'bg-[#eee] border-b border-black/10' : 'bg-transparent'} fixed flex justify-between px-4 lg:px-24 top-0 py-2 w-full z-20`}>
+        <a
+          className='flex text-lg text-secondary font-semibold hover:underline px-4 transition-all duration-300 p-2 rounded-md'
+          href='#home'
+        >
+          CARLOS LUNA
+        </a>
+
+        <ul className='hidden md:flex text-lg text-secondary font-semibold items-center'>
           <li className=''>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#experience'>Experience</a>
           </li>
@@ -32,6 +40,10 @@ export const NavBar = () => {
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#contact'>Contact</a>
           </li>
         </ul>
+        <button className='md:hidden flex items-center px-4' onClick={() => setShowMenu(!showMenu)}>
+          <BurgerMenuIcon />
+        </button>
+        <BurgerMenu isVisible={showMenu} />
       </nav>
     </>
   )
