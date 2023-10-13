@@ -27,12 +27,14 @@ export const HeroBox = () => {
             href='https://github.com/CharlyLuna'
             target='_blank'
             rel='noreferrer noopener'
+            aria-label="Watch Carlos Luna's GitHub profile"
           >
             <GithubIcon color='black' />
           </a>
           <a
             className='hover:scale-[1.15] transition-transform duration-300'
             href=''
+            aria-label="Watch Carlos Luna's LinkedIn profile"
           >
             <LinkedInIcon />
           </a>

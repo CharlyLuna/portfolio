@@ -22,11 +22,11 @@ export const Form = () => {
   return (
     <form ref={form} onSubmit={handleSubmit} className='flex flex-col gap-2 text-secondary shadow-lg bg-[#eee] py-8 px-4 w-[80%] md:w-[50%] max-w-[450px]'>
       <label htmlFor='name'>Name</label>
-      <input required className='p-2 rounded-sm ' type='text' name='name' />
+      <input required id='name' className='p-2 rounded-sm ' type='text' name='name' />
       <label htmlFor='email'>Email</label>
-      <input required className='p-2 rounded-sm ' type='email' name='email' />
+      <input required id='email' className='p-2 rounded-sm ' type='email' name='email' />
       <label htmlFor='message'>Message</label>
-      <textarea required className='p-2 rounded-sm h-[100px] min-h-[100px]' type='text' name='message' />
+      <textarea required id='message' className='p-2 rounded-sm h-[100px] min-h-[100px]' type='text' name='message' />
       <button type='submit' className='bg-primary text-[#f5f5f5] mt-4 w-fit py-2 px-6 rounded-sm font-semibold hover:scale-105 hover:bg-accent transition-all duration-300 ease-in-out'>Send</button>
     </form>
   )

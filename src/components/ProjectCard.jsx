@@ -11,7 +11,7 @@ export const ProjectCard = ({ image, title, description, tags, link }) => {
       </a>
       <div className='p-5'>
         <a className='flex gap-2 mb-2 items-center group/repo w-fit' href={link}>
-          <h5 className='flex text-2xl font-bold text-primary group-hover/repo:underline transition-all duration-300'>{title}</h5>
+          <h1 className='flex text-2xl font-bold text-primary group-hover/repo:underline transition-all duration-300'>{title}</h1>
           <AlternativeGithubIcon color='primary' />
         </a>
         <p className='mb-3 font-normal text-secondary'>{description}</p>
