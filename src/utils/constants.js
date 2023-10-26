@@ -18,23 +18,26 @@ export const MARKUPS = {
 export const PROJECTS = [
   {
     title: 'HEROES APP',
-    image: '/netflix-home.png',
+    image: '/heroes-app.png',
     description: 'SPA to check out information about heroes from Marvel and DC, with a login and routes protection.',
     tags: ['React', 'Bootstrap'],
-    link: '#'
+    link: 'https://heroes-app-chluna.netlify.app/',
+    repo: 'https://github.com/CharlyLuna/react-apps-basic/tree/main/heroes-app-spa'
   },
   {
     title: 'NETFLIX CLONE',
     image: '/netflix-home.png',
     description: 'Recreation of the Netflix website using data from an API and login/registration. Includes the visualization of the movie trailers and searching among different movie genres.',
     tags: ['React', 'Tailwindcss', 'Firebase'],
-    link: '#'
+    link: 'https://netflix-clone-chluna.netlify.app/',
+    repo: 'https://github.com/CharlyLuna/netflix-clone'
   },
   {
-    title: 'GAME STORE WEBSITE',
+    title: 'GAME STORE',
     image: '/netflix-home.png',
     description: 'Videogames website store using data from an API, the search, filter and details of videogames are included. This project aims to create a beautiful design of a web store for gamers.',
     tags: ['React', 'Tailwindcss'],
-    link: '#'
+    link: '#',
+    repo: '#'
   }
 ]
