@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BurgerMenu } from './BurgerMenu'
-import { BurgerMenuIcon } from './BurgerMenuIcon'
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [showMenu, setShowMenu] = useState(false)
 
   useEffect(() => {
     const handleScroll = (e) => {
@@ -40,10 +38,7 @@ export const NavBar = () => {
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#contact'>Contact</a>
           </li>
         </ul>
-        <button className='md:hidden flex items-center px-4' onClick={() => setShowMenu(!showMenu)}>
-          <BurgerMenuIcon />
-        </button>
-        <BurgerMenu isVisible={showMenu} />
+        <BurgerMenu />
       </nav>
     </>
   )
