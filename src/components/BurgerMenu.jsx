@@ -3,7 +3,7 @@ import { BurgerMenuIcon } from './BurgerMenuIcon'
 import { CloseIcon } from './CloseIcon'
 
 export const BurgerMenu = () => {
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
 
   return (
     <>
@@ -15,13 +15,13 @@ export const BurgerMenu = () => {
           <CloseIcon />
         </button>
         <ul className='text-secondary font-semibold text-end flex flex-col gap-4'>
-          <li onClick={() => setShowMenu(false)}>
+          <li onClick={() => setShowMenu(!showMenu)}>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#experience'>Experience</a>
           </li>
-          <li onClick={() => setShowMenu(false)}>
+          <li onClick={() => setShowMenu(!showMenu)}>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#projects'>Projects</a>
           </li>
-          <li onClick={() => setShowMenu(false)}>
+          <li onClick={() => setShowMenu(!showMenu)}>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#contact'>Contact</a>
           </li>
         </ul>
