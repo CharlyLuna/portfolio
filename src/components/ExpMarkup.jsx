@@ -4,9 +4,9 @@ export const ExpMarkup = ({ title, date, tags, description, place }) => {
   return (
     <div className='flex flex-col md:flex-row gap-4 relative '>
       <div className='absolute -inset-x-4 -inset-y-4 z-0 border border-primary rounded-sm' />
-      <header className='mb-2 mt-1 z-10 min-w-[180px] text-secondary font-light'>{date}</header>
+      <header className='mb-2 mt-1 z-10 min-w-[180px] text-secondary'>{date}</header>
       <div className='flex flex-col gap-2 z-10'>
-        <h2 className='text-lg font-semibold text-primary'>{title} <span>{place}</span></h2>
+        <h2 className='text-lg font-bold text-primary'>{title} <span>{place}</span></h2>
         <p className='text-secondary'>{description}</p>
         <ul className='mt-2 flex flex-wrap gap-2'>
           {
