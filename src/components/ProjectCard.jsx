@@ -7,10 +7,10 @@ export const ProjectCard = ({ image, title, description, tags, link, repo }) => 
       lg:hover:scale-[1.05] transition-all duration-300 h-full'
     >
       <a target='_blank' rel='noopener noreferrer' className='flex w-full justify-center items-center pt-5 group/image-preview' href={link}>
-        <img className='rounded-lg w-[90%] h-60 object-cover group-hover/image-preview:contrast-125' src={image} alt={`${title} page preview`} />
+        <img className='rounded-lg w-[90%] h-60 object-cover group-hover/image-preview:contrast-125' src={image} alt={`Open in a new window the ${title} page preview`} />
       </a>
       <div className='p-5'>
-        <a target='_blank' rel='noopener noreferrer' className='flex gap-2 mb-2 items-center group/repo w-fit' href={repo}>
+        <a target='_blank' rel='noopener noreferrer' className='flex gap-2 mb-2 items-center group/repo w-fit' href={repo} aria-label={`Open in a new window the ${title} code repository`}>
           <h1 className='flex text-2xl font-bold text-primary group-hover/repo:underline transition-all duration-300'>{title}</h1>
           <AlternativeGithubIcon color='primary' />
         </a>
