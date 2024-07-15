@@ -1,5 +1,5 @@
 import { Tag } from './Tag'
-import { AlternativeGithubIcon } from './AlternativeGithubIcon'
+import { AlternativeGithubIcon } from './icons/AlternativeGithubIcon'
 
 export const ProjectCard = ({ image, title, description, tags, link, repo }) => {
   return (
