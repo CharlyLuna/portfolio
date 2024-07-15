@@ -1,4 +1,11 @@
 export const MARKUPS = {
+  mxmart: {
+    title: 'FRONTEND DEVELOPER',
+    date: 'NOV 2023 - PRESENT',
+    tags: ['Next.js', 'TypeScript', 'TanStack Query', 'AWS', 'Amplify', 'Git', 'CodeCommit', 'AWS Lambda'],
+    description: 'Collaborated as part of the front-end team doing tasks such as creation and refactor of server and client components, implementation of third party packages for specific functionalities, creation of custom hooks to reutilize logic in the application, creation of applications using AWS Amplify, utilization of internal APIs as well as third-party APIs (e.g. YouTube API) among others.',
+    place: '‧ Mxmart'
+  },
   freeway: {
     title: 'MOBILE APPLICATION DEVELOPER',
     date: 'JAN 2022 - APR 2023',
@@ -8,7 +15,7 @@ export const MARKUPS = {
   },
   college: {
     title: 'SOFTWARE ENGINEERING STUDENT',
-    date: 'AUG 2020 - PRESENT',
+    date: 'AUG 2020 - JUL 2024',
     tags: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'MongoDB', 'Nodejs'],
     description: 'Currently studying my last year of software engineering at University of Colima, working in personal projects and learning new technologies.',
     place: '‧ UDC'
@@ -17,27 +24,35 @@ export const MARKUPS = {
 
 export const PROJECTS = [
   {
-    title: 'HEROES APP',
-    image: '/heroes-app.png',
-    description: 'SPA to check out information about heroes from Marvel and DC, with a login and routes protection.',
-    tags: ['React', 'Bootstrap'],
-    link: 'https://heroes-app-chluna.netlify.app/',
-    repo: 'https://github.com/CharlyLuna/react-apps-basic/tree/main/heroes-app-spa'
+    title: 'E-SHOP App',
+    image: '/eshop-app.png',
+    description: 'E-commerce app with features like adding to cart, filter by categories, pagination, payment usign Paypal, administration of products and users, authentication, a responsive design and more.',
+    tags: ['Next.js', 'TypeScript', 'Tailwindcss', 'Prisma', 'PostgreSQL'],
+    link: 'https://eshop-app-chluna.vercel.app/',
+    repo: 'https://github.com/CharlyLuna/nextjs-course/tree/main/e-commerce'
   },
   {
-    title: 'NETFLIX CLONE',
+    title: 'Moonflix',
     image: '/netflix-home.png',
-    description: 'Recreation of the Netflix website using data from an API and login/registration. Includes the visualization of the movie trailers and searching among different movie genres.',
-    tags: ['React', 'Tailwindcss', 'Firebase'],
-    link: 'https://netflix-clone-chluna.netlify.app/',
+    description: 'Movies and series app with a Netflix style using data from an API and login/registration. This project has features like adding to favorites, filter by categories, and a beautiful design.',
+    tags: ['React', 'JavaScript', 'Tailwindcss', 'Firebase'],
+    link: '#',
     repo: 'https://github.com/CharlyLuna/netflix-clone'
   },
   {
-    title: 'GAME STORE',
+    title: 'Cocos ResFood',
+    image: '/cocos-resfood.png',
+    description: 'Restaurant app centered in the user experience and design of the page with animations, sliders and good looking components.',
+    tags: ['Next.js', 'TypeScript', 'Tailwindcss'],
+    link: 'https://cocos-resfood-chluna.vercel.app/',
+    repo: 'https://github.com/CharlyLuna/tanstack-projects/tree/main/react-query-issues-main'
+  },
+  {
+    title: 'GitHub Issues App',
     image: '/netflix-home.png',
-    description: 'Videogames website store using data from an API, the search, filter and details of videogames are included. This project aims to create a beautiful design of a web store for gamers.',
-    tags: ['React', 'Tailwindcss'],
-    link: '#',
-    repo: '#'
+    description: 'App that shows the issues of a repository using the GitHub API. This project has features like pagination, search, and management of cache using Tanstack Query.',
+    tags: ['React', 'TypeScript', 'Bootstrap'],
+    link: 'https://issues-app-chluna.vercel.app/',
+    repo: 'https://github.com/CharlyLuna/tanstack-projects/tree/main/react-query-issues-main'
   }
 ]

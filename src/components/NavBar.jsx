@@ -7,15 +7,15 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className='bg-[#eee] border-b border-black/10 fixed flex justify-between px-4 lg:px-24 top-0 py-2 w-full z-20'>
+      <nav className='bg-slate-800 border-b border-secondary fixed flex justify-between px-4 lg:px-24 top-0 py-2 w-full z-20'>
         <a
-          className='flex text-lg text-secondary font-semibold hover:underline px-4 transition-all duration-300 p-2 rounded-md'
+          className='flex text-lg text-white font-semibold hover:underline px-4 transition-all duration-300 p-2 rounded-md'
           href='#home'
         >
           CARLOS LUNA
         </a>
 
-        <ul className='hidden md:flex text-lg text-secondary font-semibold items-center'>
+        <ul className='hidden md:flex text-lg text-white font-semibold items-center'>
           <li className=''>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#experience'>Experience</a>
           </li>
@@ -27,7 +27,7 @@ export const NavBar = () => {
           </li>
         </ul>
         <button className='md:hidden' onClick={openSidebar}>
-          <IoMenu className='text-secondary' size={30} />
+          <IoMenu className='text-white' size={30} />
         </button>
       </nav>
     </>

@@ -9,7 +9,7 @@ export const HeroBox = () => {
           <p className='text-secondary lg:text-lg'>Hello,</p>
           <h1 className='text-3xl lg:text-5xl font-bold text-[#4b4f5d]'>I'm <span className='text-primary'>Carlos</span> Luna</h1>
           <h2 className='text-secondary font-semibold text-lg lg:text-xl'>{codeText}</h2>
-          <p className='text-secondary sm:w-[80%] max-lg:self-center pt-2'>Focused on Front-End development with React. Love to learn new technologies and eager to get involve in new projects.</p>
+          <p className='text-secondary sm:w-[80%] max-lg:self-center pt-2'>Focused on Front-End development with React and Next.js. Currently learning about AWS and different technologies, I love to get involve in new projects and take new challengues.</p>
           <a href='/CarlosLuna-CV.pdf' download='carlos-luna-cv' className='bg-primary mt-4 w-fit self-center lg:self-start p-2 rounded-sm font-semibold hover:scale-105 hover:bg-red-800 transition-all duration-300 ease-in-out'>Download CV</a>
         </div>
         <div className='p-2 border border-secondary rounded-full'>
@@ -17,7 +17,7 @@ export const HeroBox = () => {
         </div>
       </div>
 
-      <div className='absolute left-6 lg:left-24 bottom-5 flex gap-4 text-black'>
+      <div className='absolute left-6 lg:left-24 bottom-5 flex gap-4 text-slate-800'>
         <a
           className='hover:scale-[1.15] transition-transform duration-300 ease-in-out'
           href='https://github.com/CharlyLuna'
