@@ -7,9 +7,9 @@ export const HeroBox = () => {
       <div className=' flex flex-col-reverse lg:flex-row justify-center items-center gap-4 lg:gap-8 mx-8'>
         <div className='flex flex-col lg:w-[50%] max-w-[750px] gap-1 text-center lg:text-left'>
           <p className='text-secondary lg:text-lg'>Hello,</p>
-          <h1 className='text-3xl lg:text-5xl font-bold text-[#4b4f5d]'>I'm <span className='text-primary'>Carlos</span> Luna</h1>
-          <h2 className='text-secondary font-semibold text-lg lg:text-xl'>{codeText}</h2>
-          <p className='text-secondary sm:w-[80%] max-lg:self-center pt-2'>Focused on Front-End development with React and Next.js. Currently learning about AWS and different technologies, I love to get involve in new projects and take new challengues.</p>
+          <h1 className='text-xl md:text-3xl lg:text-5xl font-bold text-[#4b4f5d]'>I'm <span className='text-primary'>Carlos</span> Luna</h1>
+          <h2 className='text-secondary font-semibold md:text-lg lg:text-xl'>{codeText}</h2>
+          <p className='text-sm md:text-base text-secondary sm:w-[80%] max-lg:self-center pt-2'>Focused on Front-End development with React and Next.js. Currently learning about AWS and different technologies, I love to get involve in new projects and take new challengues.</p>
           <a href='/CarlosLuna-CV.pdf' download='carlos-luna-cv' className='bg-primary mt-4 w-fit self-center lg:self-start p-2 rounded-sm font-semibold hover:scale-105 hover:bg-red-800 transition-all duration-300 ease-in-out'>Download CV</a>
         </div>
         <div className='p-2 border border-secondary rounded-full'>

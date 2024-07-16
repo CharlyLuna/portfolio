@@ -48,7 +48,7 @@ export const Sidebar = () => {
 
       {/* Side menu */}
       <nav
-        className={`${!isSidebarOpen && 'translate-x-full'} overflow-auto fixed p-5 right-0 top-0 w-screen md:w-[500px] h-screen bg-white z-20 shadow-2xl transform transition-all duration-300`}
+        className={`${!isSidebarOpen && 'translate-x-full'} overflow-auto fixed p-5 right-0 top-0 w-screen md:w-[500px] h-screen bg-[#f5f5f5] z-20 shadow-2xl transform transition-all duration-300`}
       >
         <button onClick={() => closeSidebar()}>
           <IoCloseOutline className='absolute top-5 right-5' size={50} />

@@ -22,6 +22,24 @@ export const MARKUPS = {
   }
 }
 
+export const CERTIFICATIONS = [
+  {
+    title: 'Certified Cloud Practitioner',
+    image: '/certs/aws-certified-cloud-practitioner.png',
+    link: 'https://www.credly.com/badges/7e20e43b-b61f-4174-92e1-e03342bcb108'
+  },
+  {
+    title: 'Certified Developer Associate',
+    image: '/certs/aws-certified-developer-associate.png',
+    link: 'https://www.credly.com/badges/e1c77c58-afbc-4ea8-98f7-0e6ea2ab725f'
+  },
+  {
+    title: 'Serverless Knowledge Badge',
+    image: '/certs/aws-knowledge-serverless.png',
+    link: 'https://www.credly.com/badges/e9f680a2-a349-4c08-9b22-225d95bae5a0'
+  }
+]
+
 export const PROJECTS = [
   {
     title: 'E-SHOP App',
