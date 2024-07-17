@@ -1,4 +1,4 @@
-import { HeroBox } from '../HeroBox'
+import { HeroBox } from './HeroBox'
 
 export const HeroSection = () => {
   return (

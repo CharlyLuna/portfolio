@@ -1,6 +1,5 @@
 import { NavBar } from './components/NavBar'
-import { ProjectsSection, ContactSection, ExperienceSection, SkillSection } from './components/sections'
-import { HeroSection } from './components/sections/HeroSection'
+import { ContactSection, ExperienceSection, HeroSection, ProjectsSection, SkillSection } from './components/sections'
 import { Sidebar } from './components/SideBar'
 
 const App = () => {

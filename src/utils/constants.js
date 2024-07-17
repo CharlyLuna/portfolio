@@ -24,14 +24,14 @@ export const MARKUPS = {
 
 export const CERTIFICATIONS = [
   {
-    title: 'Certified Cloud Practitioner',
-    image: '/certs/aws-certified-cloud-practitioner.png',
-    link: 'https://www.credly.com/badges/7e20e43b-b61f-4174-92e1-e03342bcb108'
-  },
-  {
     title: 'Certified Developer Associate',
     image: '/certs/aws-certified-developer-associate.png',
     link: 'https://www.credly.com/badges/e1c77c58-afbc-4ea8-98f7-0e6ea2ab725f'
+  },
+  {
+    title: 'Certified Cloud Practitioner',
+    image: '/certs/aws-certified-cloud-practitioner.png',
+    link: 'https://www.credly.com/badges/7e20e43b-b61f-4174-92e1-e03342bcb108'
   },
   {
     title: 'Serverless Knowledge Badge',
@@ -67,7 +67,7 @@ export const PROJECTS = [
   },
   {
     title: 'GitHub Issues App',
-    image: '/netflix-home.png',
+    image: '/github-issues-app.png',
     description: 'App that shows the issues of a repository using the GitHub API. This project has features like pagination, search, and management of cache using Tanstack Query.',
     tags: ['React', 'TypeScript', 'Bootstrap'],
     link: 'https://issues-app-chluna.vercel.app/',

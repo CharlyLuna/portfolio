@@ -1,7 +1,7 @@
 import { FaGitSquare } from 'react-icons/fa'
 import { FaNodeJs, FaReact } from 'react-icons/fa6'
 import { SiAmazonaws, SiFlutter, SiHtml5, SiJavascript, SiNextdotjs, SiPrisma, SiTailwindcss, SiTypescript } from 'react-icons/si'
-import { CERTIFICATIONS } from '../../utils/constants'
+import { CERTIFICATIONS } from '../../../utils/constants'
 
 const SKILLS = [
   {

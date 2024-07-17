@@ -1,5 +1,4 @@
-import { PROJECTS } from '../../utils/constants'
-import { ProjectCard } from '../ProjectCard'
+import { ProjectsSlider } from './ProjectsSlider'
 
 export const ProjectsSection = () => {
   return (
@@ -7,8 +6,8 @@ export const ProjectsSection = () => {
       <h1 className='flex justify-center mb-14 pt-20 text-3xl text-[#4b4f5d] font-bold'>
         PROJECTS
       </h1>
-      <div className='mx-10 flex justify-center'>
-        <ul
+      <div className='flex justify-center w-full h-[500px] items-center md:p-8'>
+        {/* <ul
           className='group/list grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 m-0 xl:w-full xl:max-w-7xl
       justify-items-center'
         >
@@ -20,7 +19,8 @@ export const ProjectsSection = () => {
               <ProjectCard {...project} />
             </li>
           ))}
-        </ul>
+        </ul> */}
+        <ProjectsSlider />
       </div>
     </section>
   )

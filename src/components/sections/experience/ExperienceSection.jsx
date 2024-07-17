@@ -1,5 +1,5 @@
-import { MARKUPS } from '../../utils/constants'
-import { ExpMarkup } from '../ExpMarkup'
+import { MARKUPS } from '../../../utils'
+import { ExpMarkup } from './ExpMarkup'
 
 export const ExperienceSection = () => {
   return (

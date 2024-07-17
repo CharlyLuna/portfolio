@@ -1,4 +1,4 @@
-import { Tag } from './Tag'
+import { Tag } from '../../Tag'
 
 export const ExpMarkup = ({ title, date, tags, description, place }) => {
   return (
