@@ -1,24 +1,24 @@
 export const MARKUPS = {
   mxmart: {
-    title: 'FRONTEND DEVELOPER',
-    date: 'NOV 2023 - PRESENT',
+    title: 'Front-end Developer',
+    date: 'November 2023 - Present',
     tags: ['Next.js', 'TypeScript', 'TanStack Query', 'AWS', 'Amplify', 'Git', 'CodeCommit', 'AWS Lambda'],
     description: 'Collaborated as part of the front-end team doing tasks such as creation and refactor of server and client components, implementation of third party packages for specific functionalities, creation of custom hooks to reutilize logic in the application, creation of applications using AWS Amplify, utilization of internal APIs as well as third-party APIs (e.g. YouTube API) among others.',
-    place: '‧ Mxmart'
+    place: 'Mxmart'
   },
   freeway: {
     title: 'MOBILE APPLICATION DEVELOPER',
-    date: 'JAN 2022 - APR 2023',
+    date: 'January 2022 - April 2023',
     tags: ['Dart', 'GraphQL', 'Flutter', 'Scrum', 'Git'],
     description: 'Collaborated in the front-end team as a mobile developer at the startup FreeWay. Worked in the development of the FreeWay app, bringing to life the figma designs and connecting the app with the backend.',
-    place: '‧ FreeWay'
+    place: 'FreeWay'
   },
   college: {
     title: 'SOFTWARE ENGINEERING STUDENT',
-    date: 'AUG 2020 - JUL 2024',
+    date: 'August 2020 - July 2024',
     tags: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'MongoDB', 'Nodejs'],
     description: 'Currently studying my last year of software engineering at University of Colima, working in personal projects and learning new technologies.',
-    place: '‧ UDC'
+    place: 'UDC'
   }
 }
 

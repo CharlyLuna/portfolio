@@ -1,23 +1,10 @@
-import { Tag } from '../../Tag'
-
 export const ExpMarkup = ({ title, date, tags, description, place }) => {
   return (
-    <div className='flex flex-col md:flex-row gap-4 relative '>
-      <div className='absolute -inset-x-4 -inset-y-4 z-0 border border-primary rounded-sm' />
-      <header className='mb-2 mt-1 z-10 min-w-[180px] text-secondary'>{date}</header>
-      <div className='flex flex-col gap-2 z-10'>
-        <h2 className='text-lg font-bold text-primary'>{title} <span>{place}</span></h2>
-        <p className='text-secondary'>{description}</p>
-        <ul className='mt-2 flex flex-wrap gap-2'>
-          {
-            tags?.map((tag, index) => (
-              <li key={`#${tag}_${index}`}>
-                <Tag title={tag} />
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
+    <li className='mb-10 ms-4'>
+      <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white' />
+      <time className='mb-1 text-sm font-normal leading-none text-gray-400'>{date}</time>
+      <h3 className='text-lg font-semibold text-gray-900'>{title} - {place}</h3>
+      <p className='text-base font-normal text-gray-500 '>{description}</p>
+    </li>
   )
 }

@@ -33,15 +33,10 @@
 }
 
 /* Navigation buttons */
-.mySwiper .swiper-button-prev,
-.mySwiper .swiper-button-next {
-  color: var(--primary);
-}
-
 .swiper-pagination {
   position: relative;
 }
 
 .swiper-pagination-bullet {
-  background: var(--primary);
+  background: white;
 }
