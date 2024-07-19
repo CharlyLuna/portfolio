@@ -44,7 +44,7 @@ export const PROJECTS = [
   {
     title: 'E-SHOP App',
     image: '/eshop-app.png',
-    description: 'E-commerce app with features like adding to cart, filter by categories, pagination, payment usign Paypal, administration of products and users, authentication, a responsive design and more.',
+    description: 'E-commerce app with features like cart shopping, filtering, payment usign Paypal, admin dashboard, authentication.',
     tags: ['Next.js', 'TypeScript', 'Tailwindcss', 'Prisma', 'PostgreSQL'],
     link: 'https://eshop-app-chluna.vercel.app/',
     repo: 'https://github.com/CharlyLuna/nextjs-course/tree/main/e-commerce'
@@ -52,7 +52,7 @@ export const PROJECTS = [
   {
     title: 'Moonflix',
     image: '/netflix-home.png',
-    description: 'Movies and series app with a Netflix style using data from an API and login/registration. This project has features like adding to favorites, filter by categories, and a beautiful design.',
+    description: 'Movies and series app with a Netflix style using data from an API and login/registration with Firebase.',
     tags: ['React', 'JavaScript', 'Tailwindcss', 'Firebase'],
     link: '#',
     repo: 'https://github.com/CharlyLuna/netflix-clone'
@@ -68,7 +68,7 @@ export const PROJECTS = [
   {
     title: 'GitHub Issues App',
     image: '/github-issues-app.png',
-    description: 'App that shows the issues of a repository using the GitHub API. This project has features like pagination, search, and management of cache using Tanstack Query.',
+    description: 'App to browse issues of a repository using the GitHub API. With management of cache using Tanstack Query.',
     tags: ['React', 'TypeScript', 'Bootstrap'],
     link: 'https://issues-app-chluna.vercel.app/',
     repo: 'https://github.com/CharlyLuna/tanstack-projects/tree/main/react-query-issues-main'

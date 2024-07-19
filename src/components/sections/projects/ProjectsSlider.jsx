@@ -9,7 +9,7 @@ import 'swiper/css/navigation'
 import './ProjectsSlider.css'
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules'
+import { Pagination } from 'swiper/modules'
 import { PROJECTS } from '../../../utils/constants'
 import { ProjectCard } from './ProjectCard'
 
@@ -17,29 +17,28 @@ export const ProjectsSlider = () => {
   return (
     <div className='w-full'>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         pagination={{
           clickable: true
         }}
         breakpoints={
           {
-            640: {
-              slidesPerView: 1
-            },
-            768: {
+            600: {
               slidesPerView: 2
+            },
+            820: {
+              slidesPerView: 3
             },
             1024: {
               slidesPerView: 3
             },
-            1420: {
+            1380: {
               slidesPerView: 4
             }
           }
         }
-        navigation
         loop
-        modules={[Pagination, Navigation]}
+        modules={[Pagination]}
         className='mySwiper'
       >
         {
