@@ -1,23 +1,23 @@
 export const MARKUPS = {
   mxmart: {
-    title: 'Front-end Developer',
+    title: 'Frontend Developer',
     date: 'November 2023 - Present',
     tags: ['Next.js', 'TypeScript', 'TanStack Query', 'AWS', 'Amplify', 'Git', 'CodeCommit', 'AWS Lambda'],
-    description: 'Collaborated as part of the front-end team doing tasks such as creation and refactor of server and client components, implementation of third party packages for specific functionalities, creation of custom hooks to reutilize logic in the application, creation of applications using AWS Amplify, utilization of internal APIs as well as third-party APIs (e.g. YouTube API) among others.',
+    description: 'Collaborated as part of the front-end team doing tasks such as creation and refactor of server and client components, implementation of third party packages for specific functionalities, creation of custom hooks, utilization of AWS services for several projects, creation of server actions and implementation of authentication in web apps, among other tasks.',
     place: 'Mxmart'
   },
   freeway: {
-    title: 'MOBILE APPLICATION DEVELOPER',
+    title: 'Mobile application developer',
     date: 'January 2022 - April 2023',
     tags: ['Dart', 'GraphQL', 'Flutter', 'Scrum', 'Git'],
-    description: 'Collaborated in the front-end team as a mobile developer at the startup FreeWay. Worked in the development of the FreeWay app, bringing to life the figma designs and connecting the app with the backend.',
+    description: 'Collaborated in the front-end team as a mobile developer at the startup FreeWay. Worked in the development of the FreeWay app, bringing to life the figma designs and interconnecting the app with the backend endpoints with the creation of providers and models. Also, interacted with GraphQL queries and mutations to get and send data to the backend.',
     place: 'FreeWay'
   },
   college: {
-    title: 'SOFTWARE ENGINEERING STUDENT',
+    title: 'Software Engineering student',
     date: 'August 2020 - July 2024',
     tags: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'MongoDB', 'Nodejs'],
-    description: 'Currently studying my last year of software engineering at University of Colima, working in personal projects and learning new technologies.',
+    description: 'Graduated as software engineer at Universidad de Colima. Learned about testing, web development, usability, project management, linux, among other topics.',
     place: 'UDC'
   }
 }
@@ -54,7 +54,7 @@ export const PROJECTS = [
     image: '/netflix-home.png',
     description: 'Movies and series app with a Netflix style using data from an API and login/registration with Firebase.',
     tags: ['React', 'JavaScript', 'Tailwindcss', 'Firebase'],
-    link: '#',
+    link: 'https://moonflix-app-chluna.vercel.app/',
     repo: 'https://github.com/CharlyLuna/netflix-clone'
   },
   {

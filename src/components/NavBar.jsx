@@ -17,6 +17,9 @@ export const NavBar = () => {
 
         <ul className='hidden md:flex text-lg text-white font-semibold items-center'>
           <li className=''>
+            <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#skills'>Skills</a>
+          </li>
+          <li className=''>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#experience'>Experience</a>
           </li>
           <li className=''>

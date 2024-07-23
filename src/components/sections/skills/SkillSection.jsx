@@ -54,9 +54,9 @@ const SKILLS = [
 
 export const SkillSection = () => {
   return (
-    <div className='flex flex-col items-center my-10 bg-slate-800 py-8 gap-10'>
-      <h1 className='text-3xl font-bold '>MY SKILLS</h1>
-      <p className='text-xl'>Technologies I use</p>
+    <section id='skills' className='flex flex-col items-center bg-slate-800 py-8 gap-10'>
+      <h1 className='text-3xl font-bold pt-20'>MY SKILLS</h1>
+      <p className='text-xl uppercase font-bold mt-8'>Some of the technologies I use</p>
       <ul className='flex flex-wrap justify-center gap-4 px-6 md:bg-white/40 rounded-md py-1'>
         {SKILLS.map((skill) => (
           <li className='group relative w-fit h-fit md:hover:scale-125 md:hover:-translate-y-4 rounded-full bg-primary text-white p-3 transition-all duration-300' key={skill.name}>
@@ -65,7 +65,7 @@ export const SkillSection = () => {
           </li>
         ))}
       </ul>
-      <p className='text-xl'>My Certifications and badges...</p>
+      <p className='text-xl uppercase font-bold mt-8'>My Certifications and badges</p>
       <div className='flex gap-2 flex-wrap justify-center'>
         {
           CERTIFICATIONS.map(cert => (
@@ -75,6 +75,6 @@ export const SkillSection = () => {
           ))
         }
       </div>
-    </div>
+    </section>
   )
 }
