@@ -1,0 +1,42 @@
+/* Swiper */
+.swiper {
+  width: 100%;
+  padding: 0;
+  max-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper {
+  box-sizing: border-box;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Slides */
+.swiper-wrapper .swiper-slide {
+  width: 25%;
+  height: auto;
+  padding: 20px 14px;
+}
+
+/* .mySwiper .swiper-slide-active {
+  opacity: 1;
+} */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation buttons */
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background: var(--primary);
+}

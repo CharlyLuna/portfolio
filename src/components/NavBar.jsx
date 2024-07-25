@@ -1,26 +1,23 @@
-import { useState, useEffect } from 'react'
+import { useContext } from 'react'
+import { IoMenu } from 'react-icons/io5'
+import { UIContext } from '../context/UIProvider'
 
 export const NavBar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  useEffect(() => {
-    const handleScroll = (e) => {
-      const { currentTarget } = e
-      if (currentTarget.scrollY === 0) {
-        setIsScrolled(false)
-      } else {
-        setIsScrolled(true)
-      }
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const { openSidebar } = useContext(UIContext)
 
   return (
     <>
-      <nav className={`${isScrolled ? 'bg-black/80' : 'bg-transparent'} fixed flex justify-center top-0 py-4 w-full z-20`}>
-        <ul className='flex text-lg text-secondary font-semibold'>
+      <nav className='bg-primary border-b border-gray-100 fixed flex justify-between px-4 lg:px-24 top-0 py-2 w-full z-20'>
+        <a
+          className='flex md:text-lg text-white font-semibold hover:underline px-4 transition-all duration-300 p-2 rounded-md'
+          href='#home'
+        >
+          CARLOS LUNA
+        </a>
+
+        <ul className='hidden md:flex text-lg text-white font-semibold items-center'>
           <li className=''>
-            <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#home'>Home</a>
+            <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#skills'>Skills</a>
           </li>
           <li className=''>
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#experience'>Experience</a>
@@ -32,6 +29,9 @@ export const NavBar = () => {
             <a className='hover:underline px-4 transition-all duration-300 p-2 rounded-md' href='#contact'>Contact</a>
           </li>
         </ul>
+        <button className='md:hidden' onClick={openSidebar}>
+          <IoMenu className='text-white' size={30} />
+        </button>
       </nav>
     </>
   )
