@@ -54,26 +54,32 @@ const SKILLS = [
 
 export const SkillSection = () => {
   return (
-    <section id='skills' className='flex flex-col items-center bg-slate-800 py-8 gap-10'>
-      <h1 className='text-3xl font-bold pt-20'>MY SKILLS</h1>
-      <p className='text-xl uppercase font-bold mt-8'>Some of the technologies I use</p>
-      <ul className='flex flex-wrap justify-center gap-4 px-6 md:bg-white/40 rounded-md py-1'>
-        {SKILLS.map((skill) => (
-          <li className='group relative w-fit h-fit md:hover:scale-125 md:hover:-translate-y-4 rounded-full bg-primary text-white p-3 transition-all duration-300' key={skill.name}>
-            {skill.icon}
-            <div className='opacity-0 md:group-hover:opacity-100 absolute -bottom-2 left-1/2 -translate-x-1/2 bg-primary h-[7px] w-[7px] rounded-full transition-opacity duration-300 ease-in-out' />
-          </li>
-        ))}
-      </ul>
-      <p className='text-xl uppercase font-bold mt-8'>My Certifications and badges</p>
-      <div className='flex gap-2 flex-wrap justify-center'>
-        {
+    <section id='skills' className='flex flex-col items-center gap-8 md:px-8 lg:px-28'>
+      <h1 className='text-3xl font-bold pt-20 text-secondary'>MY SKILLS</h1>
+      <div className='bg-slate-800 p-8 md:rounded-md shadow-xl w-full'>
+        <p className='text-xl font-bold mb-8 text-center'>Technologies I feel comfortable with</p>
+        <ul className='flex flex-wrap justify-center gap-4 py-1'>
+          {SKILLS.map((skill) => (
+            <li className='group relative w-fit h-fit md:hover:scale-125 md:hover:-translate-y-4 rounded-full bg-primary text-white p-3 transition-all duration-200' key={skill.name}>
+              {skill.icon}
+              <div className='opacity-0 md:group-hover:opacity-100 absolute -bottom-2 left-1/2 -translate-x-1/2 bg-primary h-[7px] w-[7px] rounded-full transition-opacity duration-300 ease-in-out' />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className='p-8'>
+        <p className='text-xl font-bold mb-8 text-secondary text-center'>My certifications and badges</p>
+        <div className='flex flex-wrap justify-center mb-2'>
+          {
           CERTIFICATIONS.map(cert => (
-            <a href={cert.link} key={cert.title} target='_blank' rel='noreferrer'>
+            <a className='md:hover:scale-110 transition-all duration-300' href={cert.link} key={cert.title} target='_blank' rel='noreferrer'>
               <img src={cert.image} className='h-[150px] w-[150px]' />
             </a>
           ))
         }
+        </div>
+        <div className='w-full bg-secondary h-2 rounded' />
+        <p className='text-secondary text-center mt-2'>Click on each badge to watch it!</p>
       </div>
     </section>
   )
