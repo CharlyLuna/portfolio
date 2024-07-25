@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import {
   IoAnalytics,
   IoCloseOutline,
+  IoCodeSlash,
   IoDocumentText,
   IoFolderOpen,
   IoMail
@@ -13,6 +14,11 @@ const menuOptions = [
     title: 'About me',
     icon: <IoDocumentText size={30} />,
     href: '/#home'
+  },
+  {
+    title: 'Skills',
+    icon: <IoCodeSlash size={30} />,
+    href: '/#skills'
   },
   {
     title: 'Experience',
