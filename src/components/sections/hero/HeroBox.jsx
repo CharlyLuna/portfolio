@@ -1,7 +1,14 @@
+import { useEffect, useState } from 'react'
 import { FaLinkedin, FaSquareGithub } from 'react-icons/fa6'
 
 const codeText = '<Frontend Developer />'
 export const HeroBox = () => {
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [])
+
   return (
     <>
       <div className=' flex flex-col-reverse lg:flex-row justify-center items-center gap-4 lg:gap-8 mx-8'>
@@ -12,7 +19,15 @@ export const HeroBox = () => {
           <p className='text-sm md:text-base text-secondary sm:w-[80%] max-lg:self-center pt-2'>Focused on Front-End development with React and Next.js. Currently learning about AWS and different technologies, I love to get involve in new projects and take new challengues.</p>
           <a href='/CarlosLuna-CV.pdf' download='carlos-luna-cv' className='bg-primary mt-4 w-fit self-center lg:self-start p-2 rounded-sm font-semibold hover:scale-105 hover:bg-red-800 transition-all duration-300 ease-in-out'>Download CV</a>
         </div>
-        <img className='rounded-full h-60 lg:h-80 xl:h-96 w-auto object-cover border-2 border-secondary shadow-xl' src='/ai-self-pic.png' alt='profile picture' />
+        {
+          loaded
+            ? (
+              <img className='rounded-full h-60 lg:h-80 xl:h-96 w-auto object-cover border-2 shadow-xl' src='/ai-self-pic.png' alt='profile picture' />
+              )
+            : (
+              <div className='h-60 lg:h-80 xl:h-96 aspect-square animate-pulse bg-gray-200 rounded-full' />
+              )
+        }
       </div>
 
       <div className='absolute left-8 lg:left-28 bottom-5 flex gap-4 text-slate-800'>
