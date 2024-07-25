@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast'
 import { NavBar } from './components/NavBar'
 import { ContactSection, ExperienceSection, HeroSection, ProjectsSection, SkillSection } from './components/sections'
 import { Sidebar } from './components/SideBar'
@@ -14,6 +15,10 @@ const App = () => {
           <ExperienceSection />
           <ProjectsSection />
           <ContactSection />
+          <Toaster
+            position='bottom-right'
+            reverseOrder={false}
+          />
         </div>
       </main>
     </>
