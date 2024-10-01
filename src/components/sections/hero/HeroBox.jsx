@@ -22,7 +22,7 @@ export const HeroBox = () => {
         {
           loaded
             ? (
-              <img className='rounded-full h-60 lg:h-80 xl:h-96 w-auto object-cover border-2 shadow-xl' src='/ai-self-pic.png' alt='profile picture' />
+              <img className='rounded-full h-60 lg:h-80 xl:h-96 w-auto object-cover border-2 shadow-xl aspect-square' src='/profile-2.jpg' alt='profile picture' />
               )
             : (
               <div className='h-60 lg:h-80 xl:h-96 aspect-square animate-pulse bg-gray-200 rounded-full' />

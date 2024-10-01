@@ -7,10 +7,21 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className='bg-primary border-b border-gray-100 fixed flex justify-between px-4 lg:px-24 top-0 py-2 w-full z-20'>
+      <nav
+        className='bg-primary border-b border-gray-100 fixed flex justify-between px-4 lg:px-24 top-0 py-2 w-full z-20'
+        onClick={(e) => {
+          e.preventDefault()
+          const id = e.target.getAttribute('href').replace('#', '')
+          const scrollTo = document.getElementById(id)
+          scrollTo?.scrollIntoView({ behavior: 'smooth' })
+        }}
+      >
         <a
           className='flex md:text-lg text-white font-semibold hover:underline px-4 transition-all duration-300 p-2 rounded-md'
           href='#home'
+          onClick={(e) => {
+
+          }}
         >
           CARLOS LUNA
         </a>

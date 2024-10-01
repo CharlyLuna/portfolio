@@ -1,26 +1,33 @@
-export const MARKUPS = {
-  mxmart: {
+export const MARKUPS = [
+  {
+    title: 'Frontend Technical Leader',
+    date: 'July 2024 - Present',
+    tags: ['Next.js', 'TypeScript', 'TanStack Query', 'AWS', 'Amplify', 'Git', 'CodeCommit', 'AWS CodePipeline', 'GitHub Actions'],
+    description: 'Working as a Frontend Technical Leader at Mxmart, taking part in the development of web applications using services from AWS. I work with several services, such as Amplify, AWS CodePipeline, and GitHub Actions, to streamline the development process and improve the overall quality of the application.',
+    place: 'Mxmart'
+  },
+  {
     title: 'Frontend Developer',
-    date: 'November 2023 - Present',
+    date: 'November 2023 - July 2024',
     tags: ['Next.js', 'TypeScript', 'TanStack Query', 'AWS', 'Amplify', 'Git', 'CodeCommit', 'AWS Lambda'],
     description: 'Collaborated as part of the front-end team doing tasks such as creation and refactor of server and client components, implementation of third party packages for specific functionalities, creation of custom hooks, utilization of AWS services for several projects, creation of server actions and implementation of authentication in web apps, among other tasks.',
     place: 'Mxmart'
   },
-  freeway: {
+  {
     title: 'Mobile application developer',
     date: 'January 2022 - April 2023',
     tags: ['Dart', 'GraphQL', 'Flutter', 'Scrum', 'Git'],
     description: 'Collaborated in the front-end team as a mobile developer at the startup FreeWay. Worked in the development of the FreeWay app, bringing to life the figma designs and interconnecting the app with the backend endpoints with the creation of providers and models. Also, interacted with GraphQL queries and mutations to get and send data to the backend.',
     place: 'FreeWay'
   },
-  college: {
+  {
     title: 'Software Engineering student',
     date: 'August 2020 - July 2024',
     tags: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'MongoDB', 'Nodejs'],
     description: 'Graduated as software engineer at Universidad de Colima. Learned about testing, web development, usability, project management, linux, among other topics.',
     place: 'UDC'
   }
-}
+]
 
 export const CERTIFICATIONS = [
   {
